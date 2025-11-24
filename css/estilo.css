@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/ahj4npl.css");
+@font-face{
+    font-family: 'fontelogo';
+    src: url("../fonts/bubblegum-sans-regular.otf");
+}
+    body {
+        font-family: arial, sans-serif;   
+        }   
+    p {
+        text-align: justify;
+        text-indent: 50px;
+        }
+    a{
+        color: #606060; /*cor dos links*/
+        text-decoration: none; /*tira o sublinhado dos links*/
+    }
+    a:hover{
+    text-decoration: underline; /*sublinhado ao passar o mouse*/
+    }
+    #filme {
+        width: 500px;     /* largura desejada */
+        height: auto;     /* mantém a proporção */
+    }
+
+ header#cabecalho img#oculosp{
+    position: absolute;
+    left: 1100px;
+    top: 60px;
+  
+ } 
+  header#cabecalho {
+    border-bottom: 1px #606060 dashed; /*borda inferior*/
+    height: 150px; /*altura do cabeçalho*/
+    background: url("../imagens/glass-logo-peq.jpg") no-repeat 0px 70px; /*imagem de fundo do cabeçalho*/
+    
+}  
+header#cabecalho h1{
+    
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.6); /*sombra do texto*/
+    padding: 0px;
+    margin-bottom: 0px; /*remove a margem inferior*/
+}    
+header#cabecalho h2{
+    font-family: "titillium-web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px; /*remove a margem superior*/
+}
+
+div#interface {
+    width: 1200px;
+    background-color: rgb(240, 237, 237);/*cor de fundo da div*/
+    margin:-20px auto 10px auto; /*centraliza a div na tela*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5); /*sombra da borda*/
+    padding: 10px ; /*espaçamento interno,dentro*/
+}
+/*formatação de img com legendas*/
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid   white;
+    box-shadow: 1px 1px 4px black; /* sombra da borda */
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption{
+    opacity: 0 ; /*transparência total*/
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4); /*cor de fundo com transparência,sempre ue passar o mouse ele aparece o texto atrás da img*/
+    color: white;
+    width: 100%;
+    height: 100% ;
+    transition: opacity .5s; /*efeito de transição*/
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1 ; /*transparência total*/
+}
+
+/*formatação do menu de navegação*/
+
+nav#menu {
+   display: block; /*define como bloco*/
+}
+
+
+nav#menu ol {
+   list-style: none;
+   text-transform: uppercase; /*transforma o texto em maiúsculo*/
+   position: absolute; /*posição absoluta,posso colocar em qualquer posição da tela*/
+   top: -20px;
+   left: 600px;
+}
+nav#menu li {
+   display: inline-block; /*coloca os itens na horizontal*/
+   margin-right: 20px; /*espaçamento entre os itens*/
+   background-color: #dddddd; /*cor de fundo*/
+   padding: 10px; /*espaçamento interno*/
+   border-radius: 5px; /*arredonda as bordas*/
+   margin: 5px; /*espaçamento externo*/
+  -webkit-transition: background-color 1s; -o-transition: background-color 1s; transition: background-color 1s; /*efeito de transição*/
+}
+
+nav#menu li:hover {
+   background-color: #606060; /*muda a cor de fundo quando passar o mouse*/
+}
+
+nav#menu h1 {
+   display: none; /*esconde o título do menu*/
+}
+
+nav#menu a {
+   color: black; /*cor do texto*/
+   text-decoration: none; /*tira o sublinhado do link*/
+}
+nav#menu a:hover {
+   color: white; /*muda a cor do texto quando passar o mouse*/
+   text-decoration: underline; /*coloca o sublinhado no link quando passar o mouse*/
+}
+section#corpo {
+    display: block; /*define como bloco*/
+    width: 500px; /*largura da seção*/
+    float: left; /*alinha a seção à esquerda*/
+    border-right:1px dashed #606060; /*borda direita*/;
+    padding-right: 50px; /*espaçamento interno à direita*/
+}
+article#noticia-principal h2 {
+    font-size: 12pt; /*tamanho da fonte*/
+    color: #606060;
+    background-color: #dddddd; /*cor de fundo do título*/
+    padding: 5px opx 5px 0px; /*espaçamento interno*/
+    margin: 10px 0px 10px 0px; /*margem externa*/   
+}
+header#cabecalho-artigo h1{
+    font-family: "titillium-web", sans-serif;
+    font-size: 20pt; /*tamanho da fonte*/
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.direita{
+    text-align: right; /*alinha o texto à direita*/
+}
+header#cabecalho-artigo h2{
+    font-size: 13pt; /*tamanho da fonte*/
+    color: #cecece;
+    background-color: #ffffff; /*cor de fundo do título*/
+    margin: 0px;
+}
+header#cabecalho-artigo h3{
+    font-size: 12px; /*tamanho da fonte*/
+    color: #606060;
+
+}
+table#tabelaspec {
+    border: 1px solid #606060; /*borda da tabela*/
+    border-spacing: 0px; /*remove o espaçamento entre as células*/
+    margin-left: auto; /*centraliza a tabela*/
+    margin-right: auto; /*centraliza a tabela*/
+}
+table#tabelaspec td{
+    border: 1px solid #606060; /*borda das células*/
+    padding: 10px; /*espaçamento interno das células*/
+    vertical-align: middle; /*alinha o texto ao meio da célula*/
+}
+table#tabelaspec td.ce{
+    color: white;
+    background-color: #606060; /*cor de fundo das células de especificações*/
+    vertical-align: top; /*alinha o texto ao topo da célula*/
+    font-weight: bold; /*deixa o texto em negrito*/
+}
+table#tabelaspec td.cd{
+    background-color: #cecece; /*cor de fundo das células de dados*/
+
+}
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;/*tamanho da fonte*/
+    font-weight: bolder;/*deixa o texto em negrito*/
+}
+
+table#tabelaspec caption span { 
+    display: block; /*define como bloco*/
+    float: right; /*alinha o texto à direita*/
+    color: #000000;
+    font-size: 8pt; /*tamanho da fonte*/
+    margin-top: 10px; /*margem superior*/
+    box-shadow: 2px 2px 2px rgb(0,0,0,.5);
+}
+aside#lateral{
+    display: block; /*define como bloco*/
+    width: 600px; /*largura da seção*/
+    float: right; /*alinha a seção à direita*/ 
+    background-color: #dddddd; 
+    margin-top: 10px;
+}
+aside#lateral h1{
+     font-family: "titillium-web", sans-serif;  
+    font-size: 20pt; /*tamanho da fonte*/
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2{
+    
+    background-color: #606060; /*cor de fundo do título*/
+    font-size: 13pt; /*tamanho da fonte*/
+    color: white;   
+    padding: 5px ;
+
+}
+footer#rodape{
+    clear: both;/*limpa os floats anteriores,para deixar a tela organizada*/
+    border-top: 1px solid #606060; /*borda superior*/
+}
+footer#rodape p{
+    text-align: center; /*alinha o texto ao centro*/
+    font-size: 12px; /*tamanho da fonte*/
+     
+   
+   
+}

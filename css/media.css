@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+div#tv-radio{
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("../imagens/radio-tv.png") no-repeat;/*coloca esse img de fundo no multimidea*/
+}
+audio#musica{
+    display: block;/*para ser exibido como um bloco*/
+    position: relative;
+    left: 550px;
+    top: 467px;
+    width: 300px;
+
+}
+#tv-radio {
+    background: #121212;          /* estilo Spotify */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#musica {
+    width: 100%;
+    filter: invert(1) brightness(1.5); 
+    /* deixa os botões claros para combinar com o fundo escuro */
+}
+iframe#filme{
+    display: block;/*para ser exibido como um bloco*/
+    position: relative;
+    left: 60px;
+    top: 90px;
+    width: 440px;
+
+}
